@@ -33,6 +33,16 @@ After you install SQL Navigator click the drop list next to the little green plu
 
 Follow the intsructions in his blog to install the tables via command line...  Or cut and paste the specific table DDL and data into SQL Navigator.
 
+|We will create the following tables:|
+|------------------------------------|
+|customers|
+|products|
+|stores|
+|orders|
+|shipments|
+|order_items|
+|inventory|
+
 Next we create a view that includes store_id and store_name.
 
 ```sql
