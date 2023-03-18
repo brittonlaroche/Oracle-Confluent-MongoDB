@@ -23,6 +23,10 @@ We begin by using the sample "Customer Orders" schema provided by Oracle Develop
 |Main Github|[https://github.com/oracle-samples/db-sample-schemas](https://github.com/oracle-samples/db-sample-schemas)|
 |Customer Orders SQL|[https://github.com/oracle-samples/db-sample-schemas/tree/main/customer_orders](https://github.com/oracle-samples/db-sample-schemas/tree/main/customer_orders)|
 
+I recommend getting Oracle sql developer from this site, its a handy tool and a great visual interface compared to command line.  Your demo will be much better with it.
+
+![Oracle SQL Developer][https://www.oracle.com/database/sqldeveloper/technologies/download/]
+
 Follow the intsructions in his blog to install the tables via command line...  Or cut and paste the specific table DDL and data into SQL Navigator.
 
 Next we create a view that includes store_id and store_name.
