@@ -12,10 +12,31 @@ We begin by using the sample "Customer Orders" schema provided by Oracle Develop
 |Main Github|[https://github.com/oracle-samples/db-sample-schemas](https://github.com/oracle-samples/db-sample-schemas)|
 |Customer Orders SQL|[https://github.com/oracle-samples/db-sample-schemas/tree/main/customer_orders](https://github.com/oracle-samples/db-sample-schemas/tree/main/customer_orders)|
 
+Follow the intsructions in his blog to install the tables via command line...  Or cut and paste the specific table DDL and data into SQL Navigator.
+
+Next we create a view that includes store_id and store_name.
 
 ```sql
-CREATE OR REPLACE FORCE EDITIONABLE VIEW "BRITTON"."CUSTOMER_ORDER_PRODUCTS_BY_STORE" ("ORDER_ID", "CUSTOMER_ID", "EMAIL_ADDRESS", "FULL_NAME", "STORE_ID", "STORE_NAME", "ITEMS","ORDER_DATETIME", "ORDER_STATUS", "ORDER_TOTAL") AS 
-select c.order_id, c.customer_id, c.email_address, c.full_name, s.store_id, s.store_name, c.items, c.order_datetime, c.order_status, c.order_total 
+CREATE OR REPLACE FORCE EDITIONABLE VIEW "CUSTOMER_ORDER_PRODUCTS_BY_STORE" (
+    "ORDER_ID", 
+    "CUSTOMER_ID", 
+    "EMAIL_ADDRESS", 
+    "FULL_NAME", 
+    "STORE_ID", 
+    "STORE_NAME", 
+    "ITEMS",
+    "ORDER_DATETIME", 
+    "ORDER_STATUS", "ORDER_TOTAL") AS 
+select c.order_id, 
+    c.customer_id, 
+    c.email_address, 
+    c.full_name, 
+    s.store_id, 
+    s.store_name, 
+    c.items, 
+    c.order_datetime, 
+    c.order_status, 
+    c.order_total 
 from customer_order_products c,
     stores s,
     orders o
