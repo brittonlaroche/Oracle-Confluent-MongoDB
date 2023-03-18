@@ -27,6 +27,10 @@ I recommend getting Oracle sql developer from this site, its a handy tool and a 
 
 [Oracle SQL Developer Download](https://www.oracle.com/database/sqldeveloper/technologies/download/)
 
+Use SQL Navigator to connect to your database using the credentials you specified when you created the database, Admin user and password.  The host name is provided to you in the AWS Console. The Service name is ORCL.
+
+![SQL Developer](./img/SQLDeveloper.png)  
+
 Follow the intsructions in his blog to install the tables via command line...  Or cut and paste the specific table DDL and data into SQL Navigator.
 
 Next we create a view that includes store_id and store_name.
