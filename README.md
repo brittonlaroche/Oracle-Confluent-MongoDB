@@ -6,6 +6,7 @@ The following __"Hands-on Lab"__ will allow you to migrate Oracle data to MongoD
 ## Create an Oracle Database 
 
 We begin by creating an AWS RDS instance of Oracle.  Log into your AWS Console and navigate to "RDS"
+[https://console.aws.amazon.com](https://console.aws.amazon.com)
 
 ![RDS](./img/AWS-RDS.png)  
 
