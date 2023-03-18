@@ -18,7 +18,11 @@ For those of you who skim over a paragraph: **Pick the same region for Oracle, C
 
 ![RDS](./img/AWS-Oracle.png)  
 
+Modify the Security group rules and add a 0.0.0.0/0 route for inbound and outbound traffic.  Networking is outside the scope of this simple tutorial. Never do this with an offical environment, but its fine for this demo.  You can go back later and remove these wide open ranges when you gtethe IP information for Confluent Cloud, but for now this works.
 
+![RDS](./img/wide-open.png)  
+
+## Create the Customer Orders Schema and Populate it With Data
 
 We begin by using the sample "Customer Orders" schema provided by Oracle Developer Advocate Chris Saxon
 |Description                            | Link                                                  | 
