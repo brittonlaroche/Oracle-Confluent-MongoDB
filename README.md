@@ -25,7 +25,7 @@ We begin by using the sample "Customer Orders" schema provided by Oracle Develop
 
 I recommend getting Oracle sql developer from this site, its a handy tool and a great visual interface compared to command line.  Your demo will be much better with it.
 
-![Oracle SQL Developer][https://www.oracle.com/database/sqldeveloper/technologies/download/]
+[Oracle SQL Developer Download](https://www.oracle.com/database/sqldeveloper/technologies/download/)
 
 Follow the intsructions in his blog to install the tables via command line...  Or cut and paste the specific table DDL and data into SQL Navigator.
 
