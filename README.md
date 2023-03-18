@@ -33,15 +33,27 @@ After you install SQL Navigator click the drop list next to the little green plu
 
 Follow the intsructions in his blog to install the tables via command line...  Or cut and paste the specific table DDL and data into SQL Navigator.
 
-|We will create the following tables:|
+|Create the tables|
+|-----------------|
+|co_tables.sql|
+
+Open the sql file and cut and paste the contents into SQL Developer. Be sure to hit the arrow with a list in the top middle tool bar to execute all the statements... just copy the insert and create statements only you don't need the begin and end blocks.
+
+![SQL Developer Tables](./img/SQLDeveloperTables.png)  
+
+|create the views|
+|-----------------|
+|co_views.sql|
+
+|Load data from the SQL files into the tables in this order|
 |------------------------------------|
-|customers|
-|products|
-|stores|
-|orders|
-|shipments|
-|order_items|
-|inventory|
+|customers.sql|
+|products.sql|
+|stores.sql|
+|orders.sql|
+|shipments.sql|
+|order_items.sql|
+|inventory.sql|
 
 Next we create a view that includes store_id and store_name.
 
