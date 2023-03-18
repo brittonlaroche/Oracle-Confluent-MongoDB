@@ -3,6 +3,8 @@ Migrate Oracle data to MongoDB with Confluent Cloud
 
 The following __"Hands-on Lab"__ will allow you to migrate Oracle data to MongoDB with the use of the Confluent Cloud.  Depending on your familiarity with MongoDB and The Confluent Cloud and the AWS management console, the lab can be anywhere from 60 to 90 minutes in total. 
 
+## Create an Oracle Database 
+
 We begin by creating an AWS RDS instance of Oracle.  Log into your AWS Console and navigate to "RDS"
 
 ![RDS](./img/AWS-RDS.png)  
@@ -88,3 +90,13 @@ and o.store_id = s.store_id
 Notice that this view selects from the customer_order_products view. If you really really care about performance in production you might consider creating materialized views.  For this example it all works just fine as is for me. My rule of thumb as a developer is get it done quickly and iterate, let the DBA schedule an unpleasant meeting with me later. Developers with this philosophy insure the need for your company to hire a good DBA.
 
 Congratulations we are all done setting up our Oracle environment!
+
+## Create a MongoDB Atlas M0 Cluster
+
+## Create a Confluent Cloud Cluster
+
+## Create a JDBC Source Connector For Oracle
+
+## Create a MongoDB Sink Connector
+
+## Create some orders in Oracle
