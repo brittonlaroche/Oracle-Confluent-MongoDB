@@ -3,6 +3,10 @@ Migrate Oracle data to MongoDB with Confluent Cloud
 
 The following __"Hands-on Lab"__ will allow you to migrate Oracle data to MongoDB with the use of the Confluent Cloud.  Depending on your familiarity with MongoDB and The Confluent Cloud and the AWS management console, the lab can be anywhere from 60 to 90 minutes in total. 
 
+We begin by creating an AWS RDS instance of Oracle.  Log into your AWS Console and navigate to "RDS"
+
+![RDS](./img/AWS-RDS.png)  
+
 
 We begin by using the sample "Customer Orders" schema provided by Oracle Developer Advocate Chris Saxon
 |Description                            | Link                                                  | 
