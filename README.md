@@ -13,6 +13,8 @@ We begin by creating an AWS RDS instance of Oracle.  Log into your AWS Console a
 
 Pick a Region... any region, but pick the same region for Oracle, Confluent Cloud, and MongoDB Atlas. Seriously same cloud provider and same region for all 3 services.  Why? Well there is this thing called egress traffic and it has a cost associated with it. If you deploy in production across multiple regions its just a matter of time before your manager schedules a rather unpleasant meeting with you. Also if you deploy across regions or cloud providers there is a whole networking discussion that is outside the scope of this hands-on lab.  Suffice it to say if you don't listen to me now, you will find out later. (I told you)
 
+For those of you who skim over a paragraph: **Pick the same region for Oracle, Confluent Cloud, and MongoDB Atlas**
+
 
 ![RDS](./img/AWS-Oracle.png)  
 
