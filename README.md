@@ -54,3 +54,6 @@ from customer_order_products c,
 where c.order_id = o.order_id
 and o.store_id = s.store_id
 ```
+
+Notice that this view selects from the customer_order_products view. If you really really care about performance in production you might consider creating materialized views.  For this example it all works just fine as is for me. My rule of thumb as a developer is get it doen quickly and iterate, let the DBA schedule an unpleasant meeting with me later.
+
