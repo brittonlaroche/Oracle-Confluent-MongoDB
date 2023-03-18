@@ -57,6 +57,11 @@ Open the sql file and cut and paste the contents into SQL Developer. Be sure to 
 |order_items.sql|
 |inventory.sql|
 
+Oh and by the way... DO NOT FORGET TO COMMIT your work! Commit like its 1979! If you don't you may lose all your work inserting data.
+
+![Sql Developer Commit](./img/commit.png) 
+
+
 Next we create a view that includes store_id and store_name.
 
 ```sql
@@ -87,11 +92,13 @@ where c.order_id = o.order_id
 and o.store_id = s.store_id
 ```
 
-Notice that this view selects from the customer_order_products view. If you really really care about performance in production you might consider creating materialized views.  For this example it all works just fine as is for me. My rule of thumb as a developer is get it done quickly and iterate, let the DBA schedule an unpleasant meeting with me later. Developers with this philosophy insure the need for your company to hire a good DBA.
+Notice that this view selects from the customer_order_products view. If you really really care about performance in production you might consider creating materialized views.  For this example it all works just fine as is for me. My rule of thumb as a developer is get it done quickly and iterate, let the DBA schedule an unpleasant meeting with me later. Developers with this philosophy insure the need for your company to hire a really good Oracle DBA. But then again these days most developers don't write SQL.
 
 Congratulations we are all done setting up our Oracle environment!
 
 ## Create a MongoDB Atlas M0 Cluster
+
+
 
 ## Create a Confluent Cloud Cluster
 
