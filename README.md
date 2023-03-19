@@ -60,9 +60,9 @@ Open the sql file and cut and paste the contents into SQL Developer. Be sure to 
 |[products.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/products.sql)|
 |[stores.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/stores.sql)|
 |[orders.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/orders.sql)|
-|[shipments.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/shimpments.sql)|
+|[shipments.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/shipments.sql)|
 |[order_items.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/order_items.sql)|
-|[inventory.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/co_tables.sql)|
+|[inventory.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/inventory.sql)|
 
 Oh and by the way... DO NOT FORGET TO COMMIT your work! Commit like its 1979! If you don't you may lose all your work inserting data.
 
