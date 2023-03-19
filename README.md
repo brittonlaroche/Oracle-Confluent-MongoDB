@@ -44,7 +44,7 @@ Follow the intsructions in his blog to install the tables via command line...  O
 
 |Create the tables|
 |-----------------|
-|co_tables.sql|
+|[co_tables.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/co_tables.sql)|
 
 Open the sql file and cut and paste the contents into SQL Developer. Be sure to hit the arrow with a list in the top middle tool bar to execute all the statements... just copy the insert and create statements only you don't need the begin and end blocks.
 
@@ -52,17 +52,17 @@ Open the sql file and cut and paste the contents into SQL Developer. Be sure to 
 
 |create the views|
 |-----------------|
-|co_views.sql|
+|[co_views.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/co_views.sql)|
 
 |Load data from the SQL files into the tables in this order|
 |------------------------------------|
-|customers.sql|
-|products.sql|
-|stores.sql|
-|orders.sql|
-|shipments.sql|
-|order_items.sql|
-|inventory.sql|
+|[customers.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/customers.sql)|
+|[products.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/products.sql)|
+|[stores.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/stores.sql)|
+|[orders.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/orders.sql)|
+|[shipments.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/shimpments.sql)|
+|[order_items.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/order_items.sql)|
+|[inventory.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/co_tables.sql)|
 
 Oh and by the way... DO NOT FORGET TO COMMIT your work! Commit like its 1979! If you don't you may lose all your work inserting data.
 
