@@ -22,7 +22,7 @@ Pick a Region... any region, but pick the same region for Oracle, Confluent Clou
 [Hands on example video to install an Oracle instance](https://youtu.be/FTIlO-GZ9uo)
 
 
-If you did not watch teh video, be sure to modify the Security group rules and add a 0.0.0.0/0 route for outbound traffic.  Networking is outside the scope of this simple tutorial. Never do this with an offical environment, but its fine for this demo.  You can go back later and remove these wide open ranges when you get the IP information for Confluent Cloud, but for now this works.
+If you did not watch the video, be sure to modify the Security group rules and add a 0.0.0.0/0 route for outbound traffic.  Networking is outside the scope of this simple tutorial. Never do this with an offical environment, but its fine for this demo.  You can go back later and remove these wide open ranges when you get the IP information for Confluent Cloud, but for now this works.
 
 ## Create the Customer Orders Schema and Populate it With Data
 
