@@ -26,7 +26,7 @@ If you did not watch the video, be sure to modify the Security group rules and a
 
 | Hands on Video: Installing SQL Developer and the sample Customer Orders data |
 |----------------|
-|[Click here to watch a 12 Minute Video on how to create an Oracle instance in AWS](https://youtu.be/D1lOtF0HqGk)|   
+|[Click here to watch a 12 Minute Video on how to load the Oracle Databse with customer orders](https://youtu.be/D1lOtF0HqGk)|   
 |<a href="https://youtu.be/D1lOtF0HqGk" target="video"><img src="./img/sqldeveloper.png" width="361px"></a>|  
 
 ## Create the Customer Orders Schema and Populate it With Data
