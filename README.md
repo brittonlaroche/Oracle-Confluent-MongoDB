@@ -116,17 +116,17 @@ select * from CUSTOMER_ORDER_PRODUCTS_BY_STORE
 
 If you dont see data check each one of your tables to see if they have data.  Most likely you skipped a step.
 
-## Create a MongoDB Atlas M0 Cluster
+# Create a MongoDB Atlas M0 Cluster
 
 Now we create a new MongoDB Atlas instance.  The process begins by lciking on the folllowing url.  
 [https://cloud.mongodb.com](https://cloud.mongodb.com)
 
 
 
-## Create a Confluent Cloud Cluster
+# Create a Confluent Cloud Cluster
 
-## Create a JDBC Source Connector For Oracle
+# Create a JDBC Source Connector For Oracle
 
-## Create a MongoDB Sink Connector
+# Create a MongoDB Sink Connector
 
-## Create some orders in Oracle
+# Create some orders in Oracle
