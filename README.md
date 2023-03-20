@@ -146,7 +146,7 @@ Now we create a new MongoDB Atlas instance.  The process begins by lciking on th
 create sequence order_seq start with 10000 INCREMENT by 1;
 ```
 
-```plsql
+```sql
 CREATE OR REPLACE PROCEDURE CREATE_NEW_ORDER 
 (
   NBRORDS IN NUMBER DEFAULT 1 
