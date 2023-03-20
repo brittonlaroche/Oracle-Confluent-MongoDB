@@ -124,11 +124,6 @@ select * from CUSTOMER_ORDER_PRODUCTS_BY_STORE
 
 If you dont see data check each one of your tables to see if they have data.  Most likely you skipped a step.
 
-## Creat test Orders
-
-```sql
-create sequence order_seq start with 10000 INCREMENT by 1;
-```
 
 # Create a MongoDB Atlas M0 Cluster
 
@@ -144,3 +139,77 @@ Now we create a new MongoDB Atlas instance.  The process begins by lciking on th
 # Create a MongoDB Sink Connector
 
 # Migrate live orders in real-time from Oracle to MongoDB Atlas
+
+## Creat test Orders
+
+```sql
+create sequence order_seq start with 10000 INCREMENT by 1;
+```
+
+```plsql
+CREATE OR REPLACE PROCEDURE CREATE_NEW_ORDER 
+(
+  NBRORDS IN NUMBER DEFAULT 1 
+) AS 
+  vnbr_cust_id number(38,0) := 1;
+  vnbr_store_id number(38,0) := 1;
+  vnbr_product_id number(38,0) := 1;
+  vnbr_order_id number(38,0) := 1;
+  vnbr_price number(10,2) := 19.99;
+  vnbr_count number(38,0) := 0;
+  vnbr_failed number(38,0) := 0;
+  
+  l_seed VARCHAR2(100);
+  
+BEGIN
+  l_seed := TO_CHAR(SYSTIMESTAMP,'YYYYDDMMHH24MISSFFFF');
+  DBMS_RANDOM.seed (val => l_seed);
+  FOR i IN 1 ..NBRORDS LOOP
+  
+    vnbr_count := vnbr_count +1;
+    vnbr_cust_id := ROUND(DBMS_RANDOM.value(low => 1, high => 392),0);
+    vnbr_product_id := ROUND(DBMS_RANDOM.value(low => 1, high => 46),0);
+    vnbr_store_id := ROUND(DBMS_RANDOM.value(low => 1, high => 23),0);
+    vnbr_order_id := order_seq.nextval;
+
+    
+    -- lookup the price
+    BEGIN
+        select unit_price into vnbr_price from products where product_id = vnbr_product_id;
+        
+        insert into orders (order_id, order_datetime, customer_id, order_status, store_id)
+        values (vnbr_order_id, SYSDATE, vnbr_cust_id, 'COMPLETE', vnbr_store_id);
+    
+        insert into order_items (order_id, line_item_id, product_id, unit_price, quantity)
+        values (vnbr_order_id, 1, vnbr_product_id, vnbr_price, 1);
+    Exception
+    when NO_DATA_FOUND then
+        dbms_output.put_line('----');
+        dbms_output.put_line('Error Code is '||SQLCODE);
+        dbms_output.put_line('Error Message is '||sqlerrm);
+        DBMS_OUTPUT.put_line('vnbr_count=' || vnbr_count );
+        DBMS_OUTPUT.put_line('vnbr_order_id=' || vnbr_order_id );
+        DBMS_OUTPUT.put_line('product_id=' || vnbr_product_id );
+        dbms_output.put_line('No data found for this product_id order is aborted');
+        vnbr_failed := vnbr_failed +1;
+        null;
+    END;
+    
+    commit;
+    
+  END LOOP;
+  
+  DBMS_OUTPUT.put_line('=================');
+  DBMS_OUTPUT.put_line(NBRORDS || ' orders attempted.');
+  DBMS_OUTPUT.put_line(vnbr_failed || ' orders failed.');
+  DBMS_OUTPUT.put_line(NBRORDS - vnbr_failed || ' orders succeded.');
+  DBMS_OUTPUT.put_line('Create New order process complete.' );
+
+EXCEPTION
+ 
+  when others then
+    dbms_output.put_line('Error Code is '||SQLCODE);
+    dbms_output.put_line('Error Message is '||sqlerrm);
+    
+END CREATE_NEW_ORDER;
+```
