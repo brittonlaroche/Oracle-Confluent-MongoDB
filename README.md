@@ -11,11 +11,14 @@ We begin by creating an AWS RDS instance of Oracle.  Log into your AWS Console a
 ![RDS](./img/AWS-RDS.png)  
 
 
-If you want the free teier and least cost for all three servcies in AWS (Oracle RDS, MongoDB Atlas, Confluent Cloud) then I suggest Oregon US West 2. Pick a Region... any region, but pick the same region for Oracle, Confluent Cloud, and MongoDB Atlas. Seriously same cloud provider and same region for all 3 services.  Why? Well there is this thing called egress traffic and it has a cost associated with it. If you deploy in production across multiple regions its just a matter of time before your manager schedules a rather unpleasant meeting with you. Also if you deploy across regions or cloud providers there is a whole networking discussion that is outside the scope of this hands-on lab.  Suffice it to say if you don't listen to me now, you will find out later. (I told you)
+If you want the free tier and least cost for all three servcies in AWS (Oracle RDS, MongoDB Atlas, Confluent Cloud) then I suggest Oregon US West 2. 
 
-For those of you who skim over a paragraph: **Pick the same region for Oracle, Confluent Cloud, and MongoDB Atlas: Oregon US West 2**  
+Pick a Region... any region, but pick the same region for Oracle, Confluent Cloud, and MongoDB Atlas. Seriously same cloud provider and same region for all 3 services.  Why? Well there is this thing called egress traffic and it has a cost associated with it. If you deploy in production across multiple regions its just a matter of time before your manager schedules a rather unpleasant meeting with you. Also if you deploy across regions or cloud providers there is a whole networking discussion that is outside the scope of this hands-on lab.  
 
+**Pick the same region for Oracle, Confluent Cloud, and MongoDB Atlas: Oregon US West 2**  
 
+| Hands on Video |
+|----------------|
 |[Click here to watch a 5 Minute Video on how to create an Oracle instance in AWS](https://youtu.be/exK1K9MT5L4)|   
 |<a href="https://youtu.be/FTIlO-GZ9uo" target="video"><img src="./img/oraclevideo.png" width="361px"></a>|  
 
