@@ -124,6 +124,12 @@ select * from CUSTOMER_ORDER_PRODUCTS_BY_STORE
 
 If you dont see data check each one of your tables to see if they have data.  Most likely you skipped a step.
 
+## Creat test Orders
+
+```sql
+create sequence order_seq start with 10000 INCREMENT by 1;
+```
+
 # Create a MongoDB Atlas M0 Cluster
 
 Now we create a new MongoDB Atlas instance.  The process begins by lciking on the folllowing url.  
