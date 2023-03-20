@@ -19,7 +19,7 @@ Pick a Region... any region, but pick the same region for Oracle, Confluent Clou
 
 | Hands on Video |
 |----------------|
-|[Click here to watch a 5 Minute Video on how to create an Oracle instance in AWS](https://youtu.be/exK1K9MT5L4)|   
+|[Click here to watch a 5 Minute Video on how to create an Oracle instance in AWS](https://youtu.be/FTIlO-GZ9uo)|   
 |<a href="https://youtu.be/FTIlO-GZ9uo" target="video"><img src="./img/oraclevideo.png" width="361px"></a>|  
 
 [Hands on example video to install an Oracle instance](https://youtu.be/FTIlO-GZ9uo)
