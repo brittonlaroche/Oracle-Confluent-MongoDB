@@ -8,9 +8,6 @@ The following __"Hands-on Lab"__ will allow you to migrate Oracle data to MongoD
 We begin by creating an AWS RDS instance of Oracle.  Log into your AWS Console and navigate to "RDS".  
 [https://console.aws.amazon.com](https://console.aws.amazon.com)
 
-![RDS](./img/AWS-RDS.png)  
-
-
 If you want the free tier and least cost for all three servcies in AWS (Oracle RDS, MongoDB Atlas, Confluent Cloud) then I suggest Oregon US West 2. 
 
 Pick a Region... any region, but pick the same region for Oracle, Confluent Cloud, and MongoDB Atlas. Seriously same cloud provider and same region for all 3 services.  Why? Well there is this thing called egress traffic and it has a cost associated with it. If you deploy in production across multiple regions its just a matter of time before your manager schedules a rather unpleasant meeting with you. Also if you deploy across regions or cloud providers there is a whole networking discussion that is outside the scope of this hands-on lab.  
