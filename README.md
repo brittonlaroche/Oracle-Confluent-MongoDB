@@ -1,6 +1,10 @@
 # Oracle-Confluent-MongoDB
 Migrate Oracle data to MongoDB with Confluent Cloud
 
+This is a powerful hands on lab that will show you how to migrate workloads off of Oracle into MongoDB.  This lab start by migrating live customer orders to MongoDB so that the reads can be offloaded to a modern cloud based database.  A good overview of the power of Confluent Cloud working with MongoDB Atlas is here:    
+
+[Effective Digital Transformation with the New "Kafcongo" Tech Stack: Kafka, Confluent & MongoDB](https://www.linkedin.com/pulse/effective-digital-transformation-new-kafcongo-tech-stack-laroche/)
+
 The following __"Hands-on Lab"__ will allow you to migrate Oracle data to MongoDB with the use of the Confluent Cloud.  Depending on your familiarity with MongoDB and The Confluent Cloud and the AWS management console, the lab can be anywhere from 60 to 90 minutes in total. Assuming you have an existing Oracle development databse accesible to the cloud you can skip the first step and use your own database.
 
 # Create an Oracle Database 
@@ -129,4 +133,4 @@ Now we create a new MongoDB Atlas instance.  The process begins by lciking on th
 
 # Create a MongoDB Sink Connector
 
-# Create some orders in Oracle
+# Migrate live orders in real-time from Oracle to MongoDB Atlas
