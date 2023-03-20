@@ -1,7 +1,7 @@
 # Oracle-Confluent-MongoDB
 Migrate Oracle data to MongoDB with Confluent Cloud
 
-The following __"Hands-on Lab"__ will allow you to migrate Oracle data to MongoDB with the use of the Confluent Cloud.  Depending on your familiarity with MongoDB and The Confluent Cloud and the AWS management console, the lab can be anywhere from 60 to 90 minutes in total. 
+The following __"Hands-on Lab"__ will allow you to migrate Oracle data to MongoDB with the use of the Confluent Cloud.  Depending on your familiarity with MongoDB and The Confluent Cloud and the AWS management console, the lab can be anywhere from 60 to 90 minutes in total. Assuming you have an existing Oracle development databse accesible to the cloud you can skip the first step and use your own database.
 
 ## Create an Oracle Database 
 
@@ -10,11 +10,11 @@ We begin by creating an AWS RDS instance of Oracle.  Log into your AWS Console a
 
 If you want the free tier and least cost for all three servcies in AWS (Oracle RDS, MongoDB Atlas, Confluent Cloud) then I suggest Oregon US West 2. 
 
-Pick a Region... any region, but pick the same region for Oracle, Confluent Cloud, and MongoDB Atlas. Seriously same cloud provider and same region for all 3 services.  Why? Well there is this thing called egress traffic and it has a cost associated with it. If you deploy in production across multiple regions its just a matter of time before your manager schedules a rather unpleasant meeting with you. Also if you deploy across regions or cloud providers there is a whole networking discussion that is outside the scope of this hands-on lab.  
+Pick a region... any region, but pick the same region for Oracle, Confluent Cloud, and MongoDB Atlas. Seriously, the same cloud provider and same region for all 3 services.  Why? Well there is this thing called egress traffic and it has a cost associated with it. If you deploy in production across multiple regions its just a matter of time before your manager schedules a rather unpleasant meeting with you. Also if you deploy across regions or cloud providers there is a whole networking discussion that is outside the scope of this hands-on lab.  
 
 **Pick the same region for Oracle, Confluent Cloud, and MongoDB Atlas: Oregon US West 2**  
 
-| Hands on Video |
+| Hands on Video: Setting up Oracle |
 |----------------|
 |[Click here to watch a 5 Minute Video on how to create an Oracle instance in AWS](https://youtu.be/FTIlO-GZ9uo)|   
 |<a href="https://youtu.be/FTIlO-GZ9uo" target="video"><img src="./img/oraclevideo.png" width="361px"></a>|  
@@ -22,7 +22,12 @@ Pick a Region... any region, but pick the same region for Oracle, Confluent Clou
 [Hands on example video to install an Oracle instance](https://youtu.be/FTIlO-GZ9uo)
 
 
-If you did not watch the video, be sure to modify the Security group rules and add a 0.0.0.0/0 route for outbound traffic.  Networking is outside the scope of this simple tutorial. Never do this with an offical environment, but its fine for this demo.  You can go back later and remove these wide open ranges when you get the IP information for Confluent Cloud, but for now this works.
+If you did not watch the video, be sure to modify the Security group rules and add a 0.0.0.0/0 route for inbound as well as outbound traffic.  Networking is outside the scope of this simple tutorial. Never do this with an offical environment, but its fine for this demo.  You can go back later and remove these wide open ranges when you get the IP information for Confluent Cloud, but for now this works.
+
+| Hands on Video: Installing SQL Developer and the sample Customer Orders data |
+|----------------|
+|[Click here to watch a 12 Minute Video on how to create an Oracle instance in AWS](https://youtu.be/FTIlO-GZ9uo)|   
+|<a href="https://youtu.be/FTIlO-GZ9uo" target="video"><img src="./img/sqldeveloper.png" width="361px"></a>|  
 
 ## Create the Customer Orders Schema and Populate it With Data
 
