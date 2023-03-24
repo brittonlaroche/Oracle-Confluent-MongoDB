@@ -67,15 +67,14 @@ Open the sql file and cut and paste the contents into SQL Developer. Be sure to 
 |-----------------|
 |[co_views.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/co_views.sql)|
 
-|Load data from the SQL files into the tables in this order|
-|------------------------------------|
-|[customers.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/customers.sql)|
-|[products.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/products.sql)|
-|[stores.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/stores.sql)|
-|[orders.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/orders.sql)|
-|[shipments.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/shipments.sql)|
-|[order_items.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/order_items.sql)|
-|[inventory.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/inventory.sql)|
+|Load data from the SQL files into the tables in this order| Notes |
+|------------------------------------|------------------------------------|
+|[customers.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/customers.sql)| |
+|[products.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/products.sql)||
+|[stores.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/stores.sql)||
+|[orders.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/orders.sql)|Only need a about a hundred|
+|[order_items.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/order_items.sql)|Only need a about a hundred|
+
 
 Oh and by the way... DO NOT FORGET TO COMMIT your work! Commit like its 1979! If you don't you may lose all your work inserting data.
 
