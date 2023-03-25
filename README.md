@@ -20,7 +20,7 @@ If you want the free tier and least cost for all three servcies in AWS (Oracle R
 
 **Pick the same region for Oracle, Confluent Cloud, and MongoDB Atlas: Oregon US West 2**  
 
-| Hands on Video: Setting up Oracle |
+| Must Watch! Hands on Video: Setting up Oracle |
 |----------------|
 |[Click here to watch a 5 Minute Video on how to create an Oracle instance in AWS](https://youtu.be/FTIlO-GZ9uo)|   
 |<a href="https://youtu.be/FTIlO-GZ9uo" target="video"><img src="./img/oraclevideo.png" width="361px"></a>|  
@@ -30,7 +30,7 @@ If you want the free tier and least cost for all three servcies in AWS (Oracle R
 
 If you did not watch the video, be sure to modify the Security group rules and add a 0.0.0.0/0 route for inbound as well as outbound traffic.  Networking is outside the scope of this simple tutorial. Never do this with an offical environment, but its fine for this demo.  You can go back later and remove these wide open ranges when you get the IP information for Confluent Cloud, but for now this works.
 
-| Hands on Video: Installing SQL Developer and the sample Customer Orders data |
+| Must Watch! Hands on Video: Installing SQL Developer and the sample Customer Orders data |
 |----------------|
 |[Click here to watch a 12 Minute Video on how to load the Oracle Databse with customer orders](https://youtu.be/D1lOtF0HqGk)|   
 |<a href="https://youtu.be/D1lOtF0HqGk" target="video"><img src="./img/sqldeveloper.png" width="361px"></a>|  
@@ -133,7 +133,7 @@ Now we create a new MongoDB Atlas instance.  The process begins by clicking on t
 Press the "Try Free" button and enter your information, or sign in with google.  Create an M0 cluster in AWS US West2 Oregon.  Set up an admin user and a demo user with read and write to any database privileges.
 
 
-| Hands on Video: Creating a MongoDB Atlas Cluster |
+| Must Watch! Hands on Video: Creating a MongoDB Atlas Cluster |
 |----------------|
 |[Click here to watch a 6 Minute Video on how to create an Atlas Cluster in AWS](https://youtu.be/J61_hiFauNs)|   
 |<a href="https://youtu.be/J61_hiFauNs" target="video"><img src="./img/mongodbAtlasVideo.PNG" width="361px"></a>| 
@@ -152,7 +152,7 @@ Create a basic cluster in AWS Oregon US West 2. We don't need to work with netwo
 
 
 
-| Hands on Video: Creating a basic Confluent Cloud cluster |
+| Must Watch! Hands on Video: Creating a basic Confluent Cloud cluster |
 |----------------|
 |[Click here to watch a 4 Minute Video on how to create a Confluent Cloud basic cluster in AWS](https://youtu.be/q437AGwdYoY)|   
 |<a href="https://youtu.be/q437AGwdYoY" target="video"><img src="./img/confluentCloudIcon.PNG" width="361px"></a>| 
