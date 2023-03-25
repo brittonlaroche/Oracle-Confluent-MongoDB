@@ -130,13 +130,15 @@ Now we create a new MongoDB Atlas instance.  The process begins by clicking on t
 
 Press the "Try Free" button and enter your information, or sign in with google.  Create an M0 cluster in AWS US West2 Oregon.  Set up an admin user and a demo user with read and write to any database privileges.
 
-Watch the 6 minute video here to get started https://youtu.be/J61_hiFauNs
+[Watch the 6 minute video here to get started creating the MongoDB Atlas Cluster](https://youtu.be/J61_hiFauNs)
 
 
 | Hands on Video: Creating a MongoDB Atlas Cluster |
 |----------------|
 |[Click here to watch a 6 Minute Video on how to create an Atlas Cluster in AWS](https://youtu.be/J61_hiFauNs)|   
 |<a href="https://youtu.be/J61_hiFauNs" target="video"><img src="./img/mongodbAtlasVideo.PNG" width="361px"></a>| 
+
+Congratulations you have your first cluster up and running in just a few minutes.  The next step is to load data from Oracle through the Confluent Cloud.  Lets create a Confluent Cloud Cluster.
 
 # Create a Confluent Cloud Cluster
 
