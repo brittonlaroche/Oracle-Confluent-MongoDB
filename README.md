@@ -132,8 +132,6 @@ Now we create a new MongoDB Atlas instance.  The process begins by clicking on t
 
 Press the "Try Free" button and enter your information, or sign in with google.  Create an M0 cluster in AWS US West2 Oregon.  Set up an admin user and a demo user with read and write to any database privileges.
 
-[Watch the 6 minute video here to get started creating the MongoDB Atlas Cluster](https://youtu.be/J61_hiFauNs)
-
 
 | Hands on Video: Creating a MongoDB Atlas Cluster |
 |----------------|
@@ -151,12 +149,12 @@ Click on the link below to set up your free basic cluster in the confluent cloud
 
 Create a basic cluster in AWS Oregon US West 2. We don't need to work with networking as the basic cluster is only available with public end points. Dedicated clusters allow private networking.
 
-[Watch the 4 minute video here to get started creating the Basic Confluent Cloud cluster](https://youtu.be/q437AGwdYoY)
+
 
 
 | Hands on Video: Creating a basic Confluent Cloud cluster |
 |----------------|
-|[Click here to watch a 6 Minute Video on how to create a basic Confluent Cloud Cluster in AWS](https://youtu.be/q437AGwdYoY)|   
+|[Click here to watch a 4 Minute Video on how to create a Confluent Cloud basic cluster in AWS](https://youtu.be/q437AGwdYoY)|   
 |<a href="https://youtu.be/q437AGwdYoY" target="video"><img src="./img/confluentCloudIcon.PNG" width="361px"></a>| 
 
 Now that the Confluent Cloud basic cluster is created we are ready to begin configuring the MongoDB sink connector.
