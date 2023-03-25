@@ -149,7 +149,15 @@ Click on the link below to set up your free basic cluster in the confluent cloud
 
 ![Confluent Cloud](./img/confluentCloud.PNG)
 
-Create a basic cluster in AWS Oregon US West 2. Allow inbound and outbound traffic over 0.0.0.0/0. We can tighten the network security once the lab is complete.
+Create a basic cluster in AWS Oregon US West 2. We don't need to work with networking as the basic cluster is only available with public end points. Dedicated clusters allow private networking.
+
+[Watch the 4 minute video here to get started creating the MongoDB Atlas Cluster](https://youtu.be/q437AGwdYoY)
+
+
+| Hands on Video: Creating a MongoDB Atlas Cluster |
+|----------------|
+|[Click here to watch a 6 Minute Video on how to create a basic Confluent Cloud Cluster in AWS](https://youtu.be/q437AGwdYoY)|   
+|<a href="https://youtu.be/q437AGwdYoY" target="video"><img src="./img/confluentCloudIcon.PNG" width="361px"></a>| 
 
 # Create a JDBC Source Connector For Oracle
 
