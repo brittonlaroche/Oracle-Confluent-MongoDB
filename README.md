@@ -144,10 +144,10 @@ Congratulations you have your first cluster up and running in just a few minutes
 
 # Create a Confluent Cloud Cluster
 
-Click on the link below to set up your free basic cluster in the confluent cloud.
-[Confluent Cloud]()
+Click on the link below to set up your free basic cluster in the confluent cloud.   
+[https://confluent.cloud](https://confluent.cloud)
 
-![Cpnfluent Cloud](confluentCloud.PNG)
+![Confluent Cloud](./img/confluentCloud.PNG)
 
 Create a basic cluster in AWS Oregon US West 2. Allow inbound and outbound traffic over 0.0.0.0/0. We can tighten the network security once the lab is complete.
 
