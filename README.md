@@ -123,8 +123,12 @@ If you dont see data check each one of your tables to see if they have data.  Mo
 
 # Create a MongoDB Atlas M0 Cluster
 
-Now we create a new MongoDB Atlas instance.  The process begins by lciking on the folllowing url.  
-[https://cloud.mongodb.com](https://cloud.mongodb.com)
+Now we create a new MongoDB Atlas instance.  The process begins by clicking on the folllowing url.  
+[https://cloud.mongodb.com](https://cloud.mongodb.com) or [https://mongodb.com/cloud](https://mongodb.com/cloud)
+
+![MongoDB Atlas Free](./img/mongodbCloudTryFree.PNG)
+
+Press the "Try Free" button and enter your information, or sign in with google.
 
 
 
