@@ -76,7 +76,7 @@ Open the sql file and cut and paste the contents into SQL Developer. Be sure to 
 
 
 Oh and by the way... DO NOT FORGET TO COMMIT your work! Commit like its 1979! If you don't you may lose all your work inserting data.
-![Oracle 1979](./img/oracle1979.png) 
+![Oracle 1979](./img/oracle1979-800.png) 
 
 ![Sql Developer Commit](./img/commit.png) 
 
