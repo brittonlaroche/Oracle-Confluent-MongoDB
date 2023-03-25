@@ -75,8 +75,9 @@ Open the sql file and cut and paste the contents into SQL Developer. Be sure to 
 |[order_items.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/order_items.sql)|Only need a about a hundred|
 
 
-Oh and by the way... DO NOT FORGET TO COMMIT your work! Commit like its 1979! If you don't you may lose all your work inserting data.
-![Oracle 1979](./img/oracle1979-800.png) 
+Oh and by the way... DO NOT FORGET TO COMMIT your work! Commit like its 1979! If you don't you may lose all your work inserting data.   
+
+<img src="./img/oracle1979-800.png" width="800px">
 
 ![Sql Developer Commit](./img/commit.png) 
 
