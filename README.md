@@ -128,7 +128,7 @@ Now we create a new MongoDB Atlas instance.  The process begins by clicking on t
 
 ![MongoDB Atlas Free](./img/mongodbCloudTryFree.PNG)
 
-Press the "Try Free" button and enter your information, or sign in with google.
+Press the "Try Free" button and enter your information, or sign in with google.  Create an M0 cluster in AWS US West2 Oregon.  Set up an admin user and a demo user with read and write to any database privileges.
 
 
 
