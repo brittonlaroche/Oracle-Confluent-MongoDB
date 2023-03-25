@@ -120,7 +120,7 @@ Congratulations we are all done setting up our Oracle environment!  You can conf
 select * from CUSTOMER_ORDER_PRODUCTS_BY_STORE
 ```
 
-If you dont see data check each one of your tables to see if they have data.  Most likely you skipped a step.
+If you dont see data check each one of your tables to see if they have data.  Most likely you skipped a step.  The hardest part of the lab and most of the work is now behind us!
 
 
 # Create a MongoDB Atlas M0 Cluster
@@ -151,10 +151,10 @@ Click on the link below to set up your free basic cluster in the confluent cloud
 
 Create a basic cluster in AWS Oregon US West 2. We don't need to work with networking as the basic cluster is only available with public end points. Dedicated clusters allow private networking.
 
-[Watch the 4 minute video here to get started creating the MongoDB Atlas Cluster](https://youtu.be/q437AGwdYoY)
+[Watch the 4 minute video here to get started creating the Basic Confluent Cloud cluster](https://youtu.be/q437AGwdYoY)
 
 
-| Hands on Video: Creating a MongoDB Atlas Cluster |
+| Hands on Video: Creating a basic Confluent Cloud cluster |
 |----------------|
 |[Click here to watch a 6 Minute Video on how to create a basic Confluent Cloud Cluster in AWS](https://youtu.be/q437AGwdYoY)|   
 |<a href="https://youtu.be/q437AGwdYoY" target="video"><img src="./img/confluentCloudIcon.PNG" width="361px"></a>| 
@@ -162,6 +162,9 @@ Create a basic cluster in AWS Oregon US West 2. We don't need to work with netwo
 Now that the Confluent Cloud basic cluster is created we are ready to begin configuring the MongoDB sink connector.
 
 # Create a MongoDB Sink Connector
+Start by opening the Confluent Cloud and mongoDB Atlas clusters in the browser:   
+
+[https://confluent.cloud](https://confluent.cloud) and [https://confluent.cloud](https://confluent.cloud)
 
 # Create a JDBC Source Connector For Oracle
 
