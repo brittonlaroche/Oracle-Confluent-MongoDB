@@ -148,7 +148,7 @@ Congratulations you have your first cluster up and running in just a few minutes
 
 # Migrate live orders in real-time from Oracle to MongoDB Atlas
 
-## Creat test Orders
+## Create Test Orders
 
 ```sql
 create sequence order_seq start with 10000 INCREMENT by 1;
