@@ -25,7 +25,7 @@ If you want the free tier and least cost for all three servcies in AWS (Oracle R
 | Must Watch! Hands on Video: Setting up Oracle |
 |----------------|
 |[Click here to watch a 5 Minute Video on how to create an Oracle instance in AWS](https://youtu.be/FTIlO-GZ9uo)|   
-|<a href="https://youtu.be/FTIlO-GZ9uo" target="video"><img src="./img/oraclevideo.png" width="361px"><img src="./img/mustwatch.png" width="361px"></a>|  
+|<a href="https://youtu.be/FTIlO-GZ9uo" target="video"><img src="./img/oraclevideo.png" width="361px"><img src="./img/watch-now-button.png" width="361px"></a>|  
 
 [Hands on example video to install an Oracle instance](https://youtu.be/FTIlO-GZ9uo)
 
@@ -35,7 +35,7 @@ If you did not watch the video, be sure to modify the Security group rules and a
 | Must Watch! Hands on Video: Installing SQL Developer and the sample Customer Orders data |
 |----------------|
 |[Click here to watch a 12 Minute Video on how to load the Oracle Databse with customer orders](https://youtu.be/D1lOtF0HqGk)|   
-|<a href="https://youtu.be/D1lOtF0HqGk" target="video"><img src="./img/sqldeveloper.png" width="361px"><img src="./img/mustwatch.png" width="361px"></a>|  
+|<a href="https://youtu.be/D1lOtF0HqGk" target="video"><img src="./img/sqldeveloper.png" width="361px"><img src="./watch-now-button.png"></a>|  
 
 ## Create the Customer Orders Schema and Populate it With Data
 
