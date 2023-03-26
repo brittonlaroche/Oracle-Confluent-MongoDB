@@ -11,6 +11,8 @@ If you don't have access to an Oracle instance, no worries we will show you how 
 
 ![Overview](./img/1672526944525.png) 
 
+The sections below have videos that show how to set up the various environments and really speed up the process of getting started. If you are being lead by an instructor you will watch the instructor set up the environments instead of watching the videos.
+
 # Create an Oracle Database 
 
 We begin by creating an AWS RDS instance of Oracle.  Log into your AWS Console and navigate to "RDS".  
