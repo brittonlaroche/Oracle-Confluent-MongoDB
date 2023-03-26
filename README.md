@@ -5,7 +5,7 @@ This is a powerful hands on lab that will show you how to migrate workloads off 
 
 [Effective Digital Transformation with the New "Kafcongo" Tech Stack: Kafka, Confluent & MongoDB](https://www.linkedin.com/pulse/effective-digital-transformation-new-kafcongo-tech-stack-laroche/)
 
-The following __"Hands-on Lab"__ will allow you to migrate Oracle data to MongoDB with the use of the Confluent Cloud.  Depending on your familiarity with MongoDB and The Confluent Cloud and the AWS management console, the lab can be anywhere from 60 to 90 minutes in total. Assuming you have an existing Oracle development databse accesible to the cloud you can skip the first step and use your own database.
+The following __"Hands-on Lab"__ will allow you to migrate Oracle data to MongoDB with the use of the Confluent Cloud.  Depending on your familiarity with MongoDB and The Confluent Cloud and the AWS management console, the lab can be anywhere from 60 to 90 minutes in total. Assuming you have an existing Oracle development databse accessible to the cloud you can skip the first step and use your own database. In some instructor lab environments a prepopulated Oracle environment may have been configured for you and save about 45 minutes.
 
 If you don't have access to an Oracle instance, no worries we will show you how to create one in the AWS cloud. This specific hands-on lab is specific to Oracle but the same concepts apply to any JDBC compliant database. The [Confluent Hub](https://www.confluent.io/hub/) has CDC connectors for many different databases as well.
 
@@ -155,7 +155,7 @@ Create a basic cluster in AWS Oregon US West 2. We don't need to work with netwo
 | Must Watch! Hands on Video: Creating a basic Confluent Cloud cluster |
 |----------------|
 |[Click here to watch a 4 Minute Video on how to create a Confluent Cloud basic cluster in AWS](https://youtu.be/q437AGwdYoY)|   
-|<a href="https://youtu.be/q437AGwdYoY" target="video"><img src="./img/confluentCloudIcon.PNG" width="361px"></a>| 
+|<a href="https://youtu.be/q437AGwdYoY" target="video"><img src="./img/confluentCloudIcon.PNG" width="361px"><img src="./img/mustwatch.png" width="361px"></a>| 
 
 Now that the Confluent Cloud basic cluster is created we are ready to begin configuring the MongoDB sink connector.
 
