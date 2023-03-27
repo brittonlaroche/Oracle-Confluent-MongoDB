@@ -161,6 +161,11 @@ Create a basic cluster in AWS Oregon US West 2. We don't need to work with netwo
 
 Now that the Confluent Cloud basic cluster is created we are ready to begin configuring the MongoDB sink connector.
 
+
+# Create a JDBC Source Connector For Oracle
+
+Open up the Confluent Cloud console [https://confluent.cloud](https://confluent.cloud) and the AWS RDS Oracle instance we created earlier [https://console.aws.amazon.com](https://console.aws.amazon.com)
+
 # Create a MongoDB Sink Connector
 Start by opening the Confluent Cloud and mongoDB Atlas clusters in the browser:   
 
@@ -169,8 +174,6 @@ Start by opening the Confluent Cloud and mongoDB Atlas clusters in the browser:
 Lets start by opening the [Confluent Cloud](https://confluent.cloud) console window.  Navigate to "Enviroments" and select the "default" environment where we created our basic cluster. Click on the basic cluster we just created and select "Connectors" on the left hand side menu.   
 
 In the connectors console we will see a list of connectors (if we have any) and a button in the upper right that says "Add a Connector."  Click the add a connector button and search for MongoDB.  Lets select the fully managed "MongoDB Sink Connector" and we will begin configuration.
-
-# Create a JDBC Source Connector For Oracle
 
 # Migrate live orders in real-time from Oracle to MongoDB Atlas
 
