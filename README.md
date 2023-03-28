@@ -280,4 +280,40 @@ https://docs.confluent.io/cloud/current/connectors/single-message-transforms.htm
 https://www.confluent.io/blog/kafka-connect-deep-dive-jdbc-source-connector/#bytes-decimals-numerics   
 https://gist.github.com/confluentgist/f58107f44741943a21c7a821c89bbf21   
 
-ORDER_TOTAL:float64
+Do we do an SMT like the following? ORDER_TOTAL:float64
+
+This fix is none of the above.  The problem is that the JDBC connector cannot determine the correct undelying datatypes from the views description.  We have to create a materialized view of cast the ORDER_TOTAL column as a NUMBER(10,2) or we will lose precision.
+
+```sql
+cast(c.order_total as number(10,2) ) 
+```
+
+Recreate the view with the SQL below in SQL Developer. 
+
+```sql
+CREATE OR REPLACE VIEW "CUSTOMER_ORDER_PRODUCTS_BY_STORE" (
+    "ORDER_ID", 
+    "CUSTOMER_ID", 
+    "EMAIL_ADDRESS", 
+    "FULL_NAME", 
+    "STORE_ID", 
+    "STORE_NAME", 
+    "ITEMS",
+    "ORDER_DATETIME", 
+    "ORDER_STATUS", "ORDER_TOTAL") AS 
+select c.order_id, 
+    c.customer_id, 
+    c.email_address, 
+    c.full_name, 
+    s.store_id, 
+    s.store_name, 
+    c.items, 
+    c.order_datetime, 
+    c.order_status, 
+    cast(c.order_total as number(10,2) ) 
+from customer_order_products c,
+    stores s,
+    orders o
+where c.order_id = o.order_id
+and o.store_id = s.store_id
+```
