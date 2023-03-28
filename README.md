@@ -252,4 +252,5 @@ END CREATE_NEW_ORDER;
 ```
 
 https://docs.confluent.io/platform/current/connect/transforms/cast.html#cast
+https://docs.confluent.io/cloud/current/connectors/single-message-transforms.html#smt-examples
 score:float64
