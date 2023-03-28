@@ -159,7 +159,7 @@ Create a basic cluster in AWS Oregon US West 2. We don't need to work with netwo
 |[Click here to watch a 4 Minute Video on how to create a Confluent Cloud basic cluster in AWS](https://youtu.be/q437AGwdYoY)|   
 |<a href="https://youtu.be/q437AGwdYoY" target="video"><img src="./img/confluentCloudIcon.PNG" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
 
-Now that the Confluent Cloud basic cluster is created we are ready to begin configuring the MongoDB sink connector.
+Now that the Confluent Cloud basic cluster is created we are ready to begin configuring the Oracle source connector.
 
 
 # Create a JDBC Source Connector For Oracle
