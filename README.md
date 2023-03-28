@@ -166,6 +166,11 @@ Now that the Confluent Cloud basic cluster is created we are ready to begin conf
 
 Open up the Confluent Cloud console [https://confluent.cloud](https://confluent.cloud) and the AWS RDS Oracle instance we created earlier [https://console.aws.amazon.com](https://console.aws.amazon.com)
 
+| Must Watch! Hands on Video: Creating a Fully Managed Oracle JDBC Connector in the Confluent Cloud  |
+|----------------|
+|[Click here to watch an 11 Minute Video on how to create a fully managed Oracle source connector](https://www.youtube.com/watch?v=K00cZU2khpo)|   
+|<a href="https://www.youtube.com/watch?v=K00cZU2khpo target="video"><img src="./img/oracleSourceConnector.PNG" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
+
 # Create a MongoDB Sink Connector
 Start by opening the Confluent Cloud and mongoDB Atlas clusters in the browser:   
 
@@ -174,6 +179,12 @@ Start by opening the Confluent Cloud and mongoDB Atlas clusters in the browser:
 Lets start by opening the [Confluent Cloud](https://confluent.cloud) console window.  Navigate to "Enviroments" and select the "default" environment where we created our basic cluster. Click on the basic cluster we just created and select "Connectors" on the left hand side menu.   
 
 In the connectors console we will see a list of connectors (if we have any) and a button in the upper right that says "Add a Connector."  Click the add a connector button and search for MongoDB.  Lets select the fully managed "MongoDB Sink Connector" and we will begin configuration.
+    
+| Must Watch! Hands on Video: Creating a Fully Managed MongoDB Atlas Sink Connector in the Confluent Cloud  |
+|----------------|
+|[Click here to watch a 6 Minute Video on how to create a Confluent Cloud basic cluster in AWS](https://www.youtube.com/watch?v=_9cvz7kmeCg)|   
+|<a href="https://www.youtube.com/watch?v=_9cvz7kmeCg target="video"><img src="./img/mongoDBSinkConnector.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
+
 
 # Migrate live orders in real-time from Oracle to MongoDB Atlas
 
