@@ -282,7 +282,7 @@ https://gist.github.com/confluentgist/f58107f44741943a21c7a821c89bbf21
 
 Do we do an SMT like the following? ORDER_TOTAL:float64
 
-This fix is none of the above.  The problem is that the JDBC connector cannot determine the correct undelying datatypes from the views description.  We have to create a materialized view of cast the ORDER_TOTAL column as a NUMBER(10,2) or we will lose precision.
+This fix is none of the above.  The problem is that the JDBC connector cannot determine the correct undelying datatypes from the views description.  We have to create a materialized view to cast the ORDER_TOTAL column as a NUMBER(10,2) or we will lose precision.
 
 ```sql
 cast(c.order_total as number(10,2) ) 
@@ -318,3 +318,5 @@ from customer_order_products c,
 where c.order_id = o.order_id
 and o.store_id = s.store_id
 ```
+
+Additionally check the "advanced configuration" in the connector settings and select 
