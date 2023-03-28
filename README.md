@@ -96,7 +96,8 @@ CREATE OR REPLACE VIEW "CUSTOMER_ORDER_PRODUCTS_BY_STORE" (
     "STORE_NAME", 
     "ITEMS",
     "ORDER_DATETIME", 
-    "ORDER_STATUS", "ORDER_TOTAL") AS 
+    "ORDER_STATUS", 
+    "ORDER_TOTAL") AS 
 select c.order_id, 
     c.customer_id, 
     c.email_address, 
@@ -115,6 +116,8 @@ and o.store_id = s.store_id
 ```
 
 Notice that this view selects from the customer_order_products view. If you really really care about performance in production you might consider creating materialized views.  For this example it all works just fine as is for me. My rule of thumb as a developer is get it done quickly and iterate, let the DBA schedule an unpleasant meeting with me later. Developers with this philosophy insure the need for your company to hire a really good Oracle DBA. But then again these days most developers don't write SQL.
+
+Also note there is a hidden "gotcha" when using views that we will show in a future section.
 
 Congratulations we are all done setting up our Oracle environment!  You can confirm the succesful install by running the following sql in SQL Developer:
 
@@ -273,16 +276,13 @@ END CREATE_NEW_ORDER;
 ```
 # Validating Data
 
-If you watched the video you may have noticed a rounding error... decimal values for the ORDER_TOTAL were rounded up to what appears to be an numeric value with no precision.  How do we fix this?  Homework read the links below and see if you can figure out how to get the correct values in the ORDER_TOTAL field inside MongoDB.
+If you watched the video you may have noticed a rounding error... decimal values for the ORDER_TOTAL were rounded up to what appears to be an numeric value with no precision.  How do we fix this?  One might think we need to do a Single Message Tranform (SMT) on the order total field.  But the SMT won't help here.  
 
-https://docs.confluent.io/platform/current/connect/transforms/cast.html#cast   
-https://docs.confluent.io/cloud/current/connectors/single-message-transforms.html#smt-examples   
-https://www.confluent.io/blog/kafka-connect-deep-dive-jdbc-source-connector/#bytes-decimals-numerics   
-https://gist.github.com/confluentgist/f58107f44741943a21c7a821c89bbf21   
+https://docs.confluent.io/platform/current/connect/transforms/cast.html
+https://docs.confluent.io/cloud/current/connectors/single-message-transforms.html  
 
-Do we do an SMT like the following? ORDER_TOTAL:float64
 
-This fix is none of the above.  The problem is that the JDBC connector cannot determine the correct undelying datatypes from the views description.  We have to create a materialized view to cast the ORDER_TOTAL column as a NUMBER(10,2) or we will lose precision.
+The problem is that the JDBC connector cannot determine the correct undelying datatypes from the view description.  We have to create a materialized view... or we have to cast the ORDER_TOTAL column as a NUMBER(10,2) in order to not lose precision.
 
 ```sql
 cast(c.order_total as number(10,2) ) 
