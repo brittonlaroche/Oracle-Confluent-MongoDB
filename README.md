@@ -280,4 +280,4 @@ https://docs.confluent.io/cloud/current/connectors/single-message-transforms.htm
 https://www.confluent.io/blog/kafka-connect-deep-dive-jdbc-source-connector/#bytes-decimals-numerics   
 https://gist.github.com/confluentgist/f58107f44741943a21c7a821c89bbf21   
 
-score:float64
+ORDER_TOTAL:float64
