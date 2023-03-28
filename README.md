@@ -319,4 +319,6 @@ where c.order_id = o.order_id
 and o.store_id = s.store_id
 ```
 
-Additionally check the "advanced configuration" in the connector settings and select 
+Additionally check the "advanced configuration" in the connector settings and select "best_fit" for the numeric mapping.
+
+![Overview](./img/best_fit.png) 
