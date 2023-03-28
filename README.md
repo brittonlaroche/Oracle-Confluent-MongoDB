@@ -188,6 +188,12 @@ In the connectors console we will see a list of connectors (if we have any) and 
 
 # Migrate live orders in real-time from Oracle to MongoDB Atlas
 
+| Must Watch! Hands on Video: Migrating Live Customer Order Data from Oracle to MongoDB Atlas with the Confluent Cloud  |
+|----------------|
+|[Click here to watch a 9 Minute Video on how to migrate live orders from Oracle to MongoDB](https://www.youtube.com/watch?v=Z3aK3IqaEWY)|   
+|<a href="https://www.youtube.com/watch?v=Z3aK3IqaEWY" target="video"><img src="./img/realTimeOrders.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
+
+
 ## Create Test Orders
 
 ```sql
@@ -261,6 +267,9 @@ EXCEPTION
     
 END CREATE_NEW_ORDER;
 ```
+# Validating Data
+
+If you wtached teh video you may have noticed a rounding error... decimal values for the ORDER_TOTAL were rounded up to what appears to be an interger value.  How do we fix this?  Homework read the links below and see if you can figure out how to get the correct values in the ORDER_TOTAL field inside MongoDB.
 
 https://docs.confluent.io/platform/current/connect/transforms/cast.html#cast   
 https://docs.confluent.io/cloud/current/connectors/single-message-transforms.html#smt-examples   
