@@ -169,7 +169,7 @@ Open up the Confluent Cloud console [https://confluent.cloud](https://confluent.
 | Must Watch! Hands on Video: Creating a Fully Managed Oracle JDBC Connector in the Confluent Cloud  |
 |----------------|
 |[Click here to watch an 11 Minute Video on how to create a fully managed Oracle source connector](https://www.youtube.com/watch?v=K00cZU2khpo)|   
-|<a href="https://www.youtube.com/watch?v=K00cZU2khpo target="video"><img src="./img/oracleSourceConnector.PNG" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
+|<a href="https://www.youtube.com/watch?v=K00cZU2khpo" target="video"><img src="./img/oracleSourceConnector.PNG" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
 
 # Create a MongoDB Sink Connector
 Start by opening the Confluent Cloud and mongoDB Atlas clusters in the browser:   
@@ -183,7 +183,7 @@ In the connectors console we will see a list of connectors (if we have any) and 
 | Must Watch! Hands on Video: Creating a Fully Managed MongoDB Atlas Sink Connector in the Confluent Cloud  |
 |----------------|
 |[Click here to watch a 6 Minute Video on how to create a Confluent Cloud basic cluster in AWS](https://www.youtube.com/watch?v=_9cvz7kmeCg)|   
-|<a href="https://www.youtube.com/watch?v=_9cvz7kmeCg target="video"><img src="./img/mongoDBSinkConnector.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
+|<a href="https://www.youtube.com/watch?v=_9cvz7kmeCg" target="video"><img src="./img/mongoDBSinkConnector.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
 
 
 # Migrate live orders in real-time from Oracle to MongoDB Atlas
