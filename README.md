@@ -87,7 +87,7 @@ Oh and by the way... DO NOT FORGET TO COMMIT your work! Commit like its 1979! If
 Next we create a view that includes store_id and store_name.
 
 ```sql
-CREATE OR REPLACE FORCE EDITIONABLE VIEW "CUSTOMER_ORDER_PRODUCTS_BY_STORE" (
+CREATE OR REPLACE VIEW "CUSTOMER_ORDER_PRODUCTS_BY_STORE" (
     "ORDER_ID", 
     "CUSTOMER_ID", 
     "EMAIL_ADDRESS", 
@@ -300,7 +300,8 @@ CREATE OR REPLACE VIEW "CUSTOMER_ORDER_PRODUCTS_BY_STORE" (
     "STORE_NAME", 
     "ITEMS",
     "ORDER_DATETIME", 
-    "ORDER_STATUS", "ORDER_TOTAL") AS 
+    "ORDER_STATUS", 
+    "ORDER_TOTAL") AS 
 select c.order_id, 
     c.customer_id, 
     c.email_address, 
