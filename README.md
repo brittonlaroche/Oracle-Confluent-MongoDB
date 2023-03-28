@@ -250,3 +250,6 @@ EXCEPTION
     
 END CREATE_NEW_ORDER;
 ```
+
+https://docs.confluent.io/platform/current/connect/transforms/cast.html#cast
+score:float64
