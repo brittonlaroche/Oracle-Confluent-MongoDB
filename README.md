@@ -188,6 +188,10 @@ In the connectors console we will see a list of connectors (if we have any) and 
 
 # Migrate live orders in real-time from Oracle to MongoDB Atlas
 
+Now we will generate some live test orders in Oracle and watch them flow in near real time through the connector into Confluent Cloud customer orders topic.  From there we will watch them load into the MongoDB CustomerOrders collection. We begin by opening SQL Developer and creating an order sequence.  Next we compile an Oracle PL/SQL procedure to generate random customer orders in Oracle.   
+
+The create new order procedure takes one argument which is the number of orders to create.  If no value is specified it will generate 1 order by default. 
+
 | Must Watch! Hands on Video: Migrating Live Customer Order Data from Oracle to MongoDB Atlas with the Confluent Cloud  |
 |----------------|
 |[Click here to watch a 9 Minute Video on how to migrate live orders from Oracle to MongoDB](https://www.youtube.com/watch?v=Z3aK3IqaEWY)|   
