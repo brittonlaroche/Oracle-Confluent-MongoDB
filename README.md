@@ -282,7 +282,9 @@ https://docs.confluent.io/platform/current/connect/transforms/cast.html
 https://docs.confluent.io/cloud/current/connectors/single-message-transforms.html  
 
 
-The problem is that the JDBC connector cannot determine the correct undelying datatypes from the view description.  We have to create a materialized view... or we have to cast the ORDER_TOTAL column as a NUMBER(10,2) in order to not lose precision.
+The problem is that the Oracle JDBC connector cannot determine the correct undelying datatypes from the view description.  We have to create a materialized view... or we have to cast the ORDER_TOTAL column as a NUMBER(10,2) in order to not lose precision.
+
+## Fixing the Oracle JDBC Connector
 
 ```sql
 cast(c.order_total as number(10,2) ) 
@@ -322,3 +324,11 @@ and o.store_id = s.store_id
 Additionally check the "advanced configuration" in the connector settings and select "best_fit" for the numeric mapping.
 
 ![Overview](./img/best_fit.png) 
+
+## Fixing the MongoDB Connector
+If necessary verify the MongoDB Connector has the folloing transform for ORDER_TOTAL   
+spec: ORDER_TOTAL:float64
+
+![Overview](./img/mongoTranforms.png) 
+
+
