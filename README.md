@@ -329,6 +329,6 @@ Additionally check the "advanced configuration" in the connector settings and se
 If necessary verify the MongoDB Connector has the folloing transform for ORDER_TOTAL   
 spec: ORDER_TOTAL:float64
 
-![Overview](./img/mongoTranforms.png) 
+![Transforms](./img/mongoTransforms.png) 
 
 
