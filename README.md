@@ -284,6 +284,50 @@ https://docs.confluent.io/cloud/current/connectors/single-message-transforms.htm
 
 The problem is that the Oracle JDBC connector cannot determine the correct undelying datatypes from the view description.  We have to create a materialized view... or we have to cast the ORDER_TOTAL column as a NUMBER(10,2) in order to not lose precision.
 
+```sql
+DESCRIBE ORDERS
+
+Name           Null?    Type              
+-------------- -------- ----------------- 
+ORDER_ID       NOT NULL NUMBER(38)        
+ORDER_DATETIME NOT NULL TIMESTAMP(6)      
+CUSTOMER_ID    NOT NULL NUMBER(38)        
+ORDER_STATUS   NOT NULL VARCHAR2(10 CHAR) 
+STORE_ID       NOT NULL NUMBER(38)      
+
+DESCRIBE ORDER_ITEMS
+
+Name         Null?    Type         
+------------ -------- ------------ 
+ORDER_ID     NOT NULL NUMBER(38)   
+LINE_ITEM_ID NOT NULL NUMBER(38)   
+PRODUCT_ID   NOT NULL NUMBER(38)   
+UNIT_PRICE   NOT NULL NUMBER(10,2) 
+QUANTITY     NOT NULL NUMBER(38)   
+SHIPMENT_ID           NUMBER(38)   
+```
+
+When we compare the well defined tables to the view we created we notice some decreptancies for the numeric fields. The ORDER_TOTAL column is listed as NUMBER, not number NUMBER(10,2) 
+
+```sql
+DESCRIBE customer_order_products_by_store
+
+Name           Null?    Type                
+-------------- -------- ------------------- 
+ORDER_ID       NOT NULL NUMBER(38)          
+CUSTOMER_ID    NOT NULL NUMBER(38)          
+EMAIL_ADDRESS  NOT NULL VARCHAR2(255 CHAR)  
+FULL_NAME      NOT NULL VARCHAR2(255 CHAR)  
+STORE_ID       NOT NULL NUMBER(38)          
+STORE_NAME     NOT NULL VARCHAR2(255 CHAR)  
+ITEMS                   VARCHAR2(4000 CHAR) 
+ORDER_DATETIME NOT NULL TIMESTAMP(6)        
+ORDER_STATUS   NOT NULL VARCHAR2(10 CHAR)   
+ORDER_TOTAL             NUMBER  
+```
+
+
+
 ## Fixing the Oracle JDBC Connector
 
 ```sql
