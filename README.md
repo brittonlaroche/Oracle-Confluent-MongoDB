@@ -18,9 +18,9 @@ The sections below have videos that show how to set up the various environments 
 We begin by creating an AWS RDS instance of Oracle.  Log into your AWS Console and navigate to "RDS".  
 [https://console.aws.amazon.com](https://console.aws.amazon.com)
 
-If you want the free tier and least cost for all three servcies in AWS (Oracle RDS, MongoDB Atlas, Confluent Cloud) then I suggest Oregon US West 2. Pick the same region for Oracle, Confluent Cloud, and MongoDB Atlas. If you deploy across regions or cloud providers there is a whole networking discussion that is outside the scope of this hands-on lab.  
+If you want the free tier and least cost for all three servcies in AWS (Oracle RDS, MongoDB Atlas, Confluent Cloud) then I suggest Oregon US West. Pick the same region for Oracle, Confluent Cloud, and MongoDB Atlas. If you deploy across regions or cloud providers there is a whole networking discussion that is outside the scope of this hands-on lab.  
 
-**Pick the same region for Oracle, Confluent Cloud, and MongoDB Atlas: Oregon US West 2**  
+**Pick the same region for Oracle, Confluent Cloud, and MongoDB Atlas: Oregon US West **  
 
 | Must Watch! Hands on Video: Setting up Oracle |
 |----------------|
