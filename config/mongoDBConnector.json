@@ -14,7 +14,7 @@
     "kafka.auth.mode": "KAFKA_API_KEY",
     "kafka.api.key": "6V6HCL6YS7PKCADK",
     "kafka.api.secret": "****************************************************************",
-    "topics": "oracle.fix.2.CUSTOMER_ORDER_PRODUCTS_BY_STORE",
+    "topics": "oracle.CUSTOMER_ORDER_PRODUCTS_BY_STORE",
     "connection.host": "production.uslta0s.mongodb.net",
     "connection.user": "britton",
     "connection.password": "*******",
