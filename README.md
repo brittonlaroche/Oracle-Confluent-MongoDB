@@ -377,3 +377,6 @@ spec: ORDER_TOTAL:float64
 ![Transforms](./img/mongoTransforms.png) 
 
 
+It is worth noting that you can update connector information, create a connector and get existing configuration data as a JSON document.  The documentation on the cloud API is here:
+https://docs.confluent.io/cloud/current/connectors/connect-api-section.html
+
