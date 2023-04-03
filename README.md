@@ -380,3 +380,6 @@ spec: ORDER_TOTAL:float64
 It is worth noting that you can update connector information, create a connector and get existing configuration data as a JSON document.  The documentation on the cloud API is here:
 https://docs.confluent.io/cloud/current/connectors/connect-api-section.html
 
+
+The final connector configuration files for this lab are here:   
+https://github.com/brittonlaroche/Oracle-Confluent-MongoDB/tree/main/config
