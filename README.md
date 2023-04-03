@@ -50,7 +50,8 @@ I recommend getting Oracle sql developer from this site, its a handy tool and a 
 
 [Oracle SQL Developer Download](https://www.oracle.com/database/sqldeveloper/technologies/download/)
 
-After you install SQL Navigator click the drop list next to the little green plus sign in the upper left of the gui and select create new connection. Use SQL Navigator to connect to your database using the credentials you specified when you created the database, Admin user and password.  The host name is provided to you in the AWS Console. The Service name is ORCL.
+After you install SQL Navigator click the drop list next to the little green plus sign in the upper left of the gui and select create new connection. Use SQL Navigator to connect to your database using the credentials you specified when you created the database, Admin user and password.  The host name is provided to you in the AWS Console.   
+**The Service name is ORCL.***
 
 ![SQL Developer](./img/SQLDeveloper.png)  
 
