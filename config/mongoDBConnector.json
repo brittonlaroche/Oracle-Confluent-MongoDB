@@ -19,7 +19,7 @@
     "connection.user": "britton",
     "connection.password": "*******",
     "database": "Sales",
-    "collection": "CustomerOrdersFix",
+    "collection": "CustomerOrders",
     "doc.id.strategy": "BsonOidStrategy",
     "doc.id.strategy.overwrite.existing": "false",
     "document.id.strategy.uuid.format": "string",
