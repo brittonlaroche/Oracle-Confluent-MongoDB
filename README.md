@@ -118,7 +118,7 @@ and o.store_id = s.store_id
 
 Notice that this view selects from the customer_order_products view. If you really really care about performance in production you might consider creating materialized views.  For this example it all works just fine as is for me. My rule of thumb as a developer is get it done quickly and iterate, let the DBA schedule an unpleasant meeting with me later. Developers with this philosophy insure the need for your company to hire a really good Oracle DBA. But then again these days most developers don't write SQL.
 
-**Also note there is a hidden "gotcha" when using views that we will show in a future section.  Numeric data types will have issues because of this view and certain settings not set correctly in the connector.  Its a common mistake that just about everyone hits, so I am walking us through how to fix it in this workshop**
+** Also note there is a hidden "gotcha" when using views that we will show in a future section.  Numeric data types will have issues because of this view and certain settings not set correctly in the connector.  This is a common mistake that just about everyone makes, so I am walking us through how to fix it in this workshop. **
 
 Congratulations we are all done setting up our Oracle environment!  You can confirm the succesful install by running the following sql in SQL Developer:
 
