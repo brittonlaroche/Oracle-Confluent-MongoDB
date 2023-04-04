@@ -370,6 +370,13 @@ Additionally check the "advanced configuration" in the connector settings and se
 
 ![Overview](./img/best_fit.png) 
 
+| Watch only if you need help:  Fixing Connector Issues Part 1  |
+|----------------|
+|[Click here to watch a 10 Minute Video on troubleshooting and fixing the connectors](https://youtu.be/sT-fFEB1xig)|   
+|<a href="https://youtu.be/sT-fFEB1xig" target="video"><img src="./img/ConnectorFixes.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
+
+
+
 ## Fixing the MongoDB Connector
 If necessary verify the MongoDB Connector has the folloing transform for ORDER_TOTAL   
 spec: ORDER_TOTAL:float64
@@ -377,9 +384,23 @@ spec: ORDER_TOTAL:float64
 ![Transforms](./img/mongoTransforms.png) 
 
 
+| Watch only if you need help:  Fixing Connector Issues Part 2  |
+|----------------|
+|[Click here to watch a 10 Minute PART 2 Video on troubleshooting and fixing the connectors](https://youtu.be/sT-fFEB1xig)|   
+|<a href="https://youtu.be/sT-fFEB1xig" target="video"><img src="./img/ConnectorFixes.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
+
+
+
 It is worth noting that you can update connector information, create a connector and get existing configuration data as a JSON document.  The documentation on the cloud API is here:
 https://docs.confluent.io/cloud/current/connectors/connect-api-section.html
+
+| Watch only if you need help:  Using the REST API to get connector configs in JSON format |
+|----------------|
+|[Click here to watch an 11 Minute Video on using the connector REST API](https://youtu.be/sT-fFEB1xig)|   
+|<a href="https://youtu.be/sT-fFEB1xig" target="video"><img src="./img/Postman.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
 
 
 The final connector configuration files for this lab are here:   
 https://github.com/brittonlaroche/Oracle-Confluent-MongoDB/tree/main/config
+
+
