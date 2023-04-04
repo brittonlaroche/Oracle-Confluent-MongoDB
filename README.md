@@ -275,7 +275,7 @@ EXCEPTION
     
 END CREATE_NEW_ORDER;
 ```
-# Validating Data
+# Validating Data & Fixing the Connectors
 
 If you watched the video you may have noticed a rounding error... decimal values for the ORDER_TOTAL were rounded up to what appears to be an numeric value with no precision.  How do we fix this?  One might think we need to do a Single Message Tranform (SMT) on the order total field.  But the SMT won't help here.  
 
