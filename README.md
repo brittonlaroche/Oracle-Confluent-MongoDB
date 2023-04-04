@@ -386,8 +386,8 @@ spec: ORDER_TOTAL:float64
 
 | Watch only if you need help:  Fixing Connector Issues Part 2  |
 |----------------|
-|[Click here to watch a 10 Minute PART 2 Video on troubleshooting and fixing the connectors](https://youtu.be/sT-fFEB1xig)|   
-|<a href="https://youtu.be/sT-fFEB1xig" target="video"><img src="./img/ConnectorFixes.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
+|[Click here to watch a 10 Minute PART 2 Video on troubleshooting and fixing the connectors](https://youtu.be/Pwd2BljuOTM)|   
+|<a href="https://youtu.be/Pwd2BljuOTM" target="video"><img src="./img/ConnectorFixes.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
 
 
 
@@ -396,8 +396,8 @@ https://docs.confluent.io/cloud/current/connectors/connect-api-section.html
 
 | Watch only if you need help:  Using the REST API to get connector configs in JSON format |
 |----------------|
-|[Click here to watch an 11 Minute Video on using the connector REST API](https://youtu.be/sT-fFEB1xig)|   
-|<a href="https://youtu.be/sT-fFEB1xig" target="video"><img src="./img/Postman.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
+|[Click here to watch an 11 Minute Video on using the connector REST API with Postman](https://youtu.be/Pwd2BljuOTM)|   
+|<a href="https://youtu.be/Pwd2BljuOTM" target="video"><img src="./img/Postman.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
 
 
 The final connector configuration files for this lab are here:   
