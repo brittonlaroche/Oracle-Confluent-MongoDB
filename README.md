@@ -370,7 +370,7 @@ Additionally check the "advanced configuration" in the connector settings and se
 
 ![Overview](./img/best_fit.png) 
 
-| Watch only if you need help:  Fixing Connector Issues Part 1  |
+| Watch only if you need help:  Fixing Connector Issues Part 1 Oracle JDBC Source Connector |
 |----------------|
 |[Click here to watch a 10 Minute Video on troubleshooting and fixing the connectors](https://youtu.be/sT-fFEB1xig)|   
 |<a href="https://youtu.be/sT-fFEB1xig" target="video"><img src="./img/ConnectorFixes.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
@@ -384,7 +384,7 @@ spec: ORDER_TOTAL:float64
 ![Transforms](./img/mongoTransforms.png) 
 
 
-| Watch only if you need help:  Fixing Connector Issues Part 2  |
+| Watch only if you need help:  Fixing Connector Issues Part 2 MongoDB Sink Connector |
 |----------------|
 |[Click here to watch a 10 Minute PART 2 Video on troubleshooting and fixing the connectors](https://youtu.be/Pwd2BljuOTM)|   
 |<a href="https://youtu.be/Pwd2BljuOTM" target="video"><img src="./img/ConnectorFixes.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
