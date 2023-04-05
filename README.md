@@ -7,13 +7,21 @@ This is a powerful hands on lab that will show you how to migrate workloads off 
 
 The following __"Hands-on Lab"__ will allow you to migrate Oracle data to MongoDB with the use of the Confluent Cloud.  Depending on your familiarity with MongoDB and The Confluent Cloud and the AWS management console, the lab can be anywhere from 60 to 90 minutes in total. Assuming you have an existing Oracle development databse accessible to the cloud you can skip the first step and use your own database. In some instructor lead lab environments a prepopulated Oracle environment may have been configured for you and save about 45 minutes.  This negates the need to install SQL Developer or any Oracle command line tools.  All other aspects of the lab use a modern cloud based toolset.
 
-If you don't have access to an Oracle instance, no worries we will show you how to create one in the AWS cloud. This particluar hands-on lab is specific to Oracle but the same concepts apply to any JDBC compliant database (Postgres, Sql Server, MySQL etc...). The [Confluent Hub](https://www.confluent.io/hub/) has CDC connectors for many different databases as well, covering all the major databases.
+If you don't have access to an Oracle instance, no worries we will show you how to create one in the AWS cloud. This particluar hands-on lab is specific to Oracle but the same concepts apply to any JDBC compliant database (Postgres, Sql Server, MySQL etc...). The [Confluent Hub](https://www.confluent.io/hub/) has CDC connectors for many different databases as well, covering all the major databases.  Its a simple 5 step process
+
+Step 1: Create an Oracle Database
+Step 2: Create a MongoDB Atlas M0 Cluster
+Step 3: Create a Confluent Cloud Cluster
+Step 4: Create a JDBC Source Connector For Oracle
+Step 5: Create a MongoDB Sink Connector
+Step 6: Migrate live orders in real-time from Oracle to MongoDB Atlas
+Step 7: Validating Data & Fixing the Connectors
 
 ![Overview](./img/1672526944525.png) 
 
 The sections below have videos that show how to set up the various environments and really speed up the process of getting started. If you are being lead by an instructor you will watch the instructor set up the environments instead of watching the videos.
 
-# Create an Oracle Database 
+# Step 1: Create an Oracle Database 
 
 We begin by creating an AWS RDS instance of Oracle.  Log into your AWS Console and navigate to "RDS".  
 [https://console.aws.amazon.com](https://console.aws.amazon.com)
@@ -129,7 +137,7 @@ select * from CUSTOMER_ORDER_PRODUCTS_BY_STORE
 If you dont see data check each one of your tables to see if they have data.  Most likely you skipped a step.  The hardest part of the lab and most of the work is now behind us!
 
 
-# Create a MongoDB Atlas M0 Cluster
+# Step 2: Create a MongoDB Atlas M0 Cluster
 
 Now we create a new MongoDB Atlas instance.  The process begins by clicking on the folllowing url.  
 [https://cloud.mongodb.com](https://cloud.mongodb.com) or [https://mongodb.com/cloud](https://mongodb.com/cloud)
@@ -146,7 +154,7 @@ Press the "Try Free" button and enter your information, or sign in with google. 
 
 Congratulations you have your first cluster up and running in just a few minutes.  The next step is to load data from Oracle through the Confluent Cloud.  Lets create a Confluent Cloud Cluster.
 
-# Create a Confluent Cloud Cluster
+# Step 3: Create a Confluent Cloud Cluster
 
 Click on the link below to set up your free basic cluster in the confluent cloud.   
 [https://confluent.cloud](https://confluent.cloud)
@@ -166,7 +174,7 @@ Create a basic cluster in AWS Oregon US West 2. We don't need to work with netwo
 Now that the Confluent Cloud basic cluster is created we are ready to begin configuring the Oracle source connector.
 
 
-# Create a JDBC Source Connector For Oracle
+# Step 4: Create a JDBC Source Connector For Oracle
 
 Open up the Confluent Cloud console [https://confluent.cloud](https://confluent.cloud) and the AWS RDS Oracle instance we created earlier [https://console.aws.amazon.com](https://console.aws.amazon.com)
 
@@ -175,7 +183,7 @@ Open up the Confluent Cloud console [https://confluent.cloud](https://confluent.
 |[Click here to watch an 11 Minute Video on how to create a fully managed Oracle source connector](https://www.youtube.com/watch?v=K00cZU2khpo)|   
 |<a href="https://www.youtube.com/watch?v=K00cZU2khpo" target="video"><img src="./img/oracleSourceConnector.PNG" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
 
-# Create a MongoDB Sink Connector
+# Step 5: Create a MongoDB Sink Connector
 Start by opening the Confluent Cloud and mongoDB Atlas clusters in the browser:   
 
 [https://confluent.cloud](https://confluent.cloud) and [https://cloud.mongodb.com](https://cloud.mongodb.com)
@@ -190,7 +198,7 @@ In the connectors console we will see a list of connectors (if we have any) and 
 |<a href="https://www.youtube.com/watch?v=_9cvz7kmeCg" target="video"><img src="./img/mongoDBSinkConnector.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
 
 
-# Migrate live orders in real-time from Oracle to MongoDB Atlas
+# Step 6: Migrate live orders in real-time from Oracle to MongoDB Atlas
 
 Now we will generate some live test orders in Oracle and watch them flow in near real time through the connector into Confluent Cloud customer orders topic.  From there we will watch them load into the MongoDB CustomerOrders collection. We begin by opening SQL Developer and creating an order sequence.  Next we compile an Oracle PL/SQL procedure to generate random customer orders in Oracle.   
 
@@ -275,7 +283,7 @@ EXCEPTION
     
 END CREATE_NEW_ORDER;
 ```
-# Validating Data & Fixing the Connectors
+# Step 7: Validating Data & Fixing the Connectors
 
 If you watched the video you may have noticed a rounding error... decimal values for the ORDER_TOTAL were rounded up to what appears to be an numeric value with no precision.  How do we fix this?  One might think we need to do a Single Message Tranform (SMT) on the order total field.  But the SMT alone won't help here.  
 
