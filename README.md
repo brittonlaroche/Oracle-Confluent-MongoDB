@@ -7,15 +7,15 @@ This is a powerful hands on lab that will show you how to migrate workloads off 
 
 The following __"Hands-on Lab"__ will allow you to migrate Oracle data to MongoDB with the use of the Confluent Cloud.  Depending on your familiarity with MongoDB and The Confluent Cloud and the AWS management console, the lab can be anywhere from 60 to 90 minutes in total. Assuming you have an existing Oracle development databse accessible to the cloud you can skip the first step and use your own database. In some instructor lead lab environments a prepopulated Oracle environment may have been configured for you and save about 45 minutes.  This negates the need to install SQL Developer or any Oracle command line tools.  All other aspects of the lab use a modern cloud based toolset.
 
-If you don't have access to an Oracle instance, no worries we will show you how to create one in the AWS cloud. This particluar hands-on lab is specific to Oracle but the same concepts apply to any JDBC compliant database (Postgres, Sql Server, MySQL etc...). The [Confluent Hub](https://www.confluent.io/hub/) has CDC connectors for many different databases as well, covering all the major databases.  Its a simple 5 step process
+If you don't have access to an Oracle instance, no worries we will show you how to create one in the AWS cloud. This particluar hands-on lab is specific to Oracle but the same concepts apply to any JDBC compliant database (Postgres, Sql Server, MySQL etc...). The [Confluent Hub](https://www.confluent.io/hub/) has CDC connectors for many different databases as well, covering all the major databases.  Its a simple 7 step process:
 
-[Step 1: Create an Oracle Database](https://github.com/brittonlaroche/Oracle-Confluent-MongoDB#step-1-create-an-oracle-database)
-[Step 2: Create a MongoDB Atlas M0 Cluster](#create-the-customer-orders-schema-and-populate-it-with-data)
-[Step 3: Create a Confluent Cloud Cluster]
-[Step 4: Create a JDBC Source Connector For Oracle]
-[Step 5: Create a MongoDB Sink Connector]
-[Step 6: Migrate live orders in real-time from Oracle to MongoDB Atlas]
-[Step 7: Validating Data & Fixing the Connectors]
+[Step 1: Create an Oracle Database](https://github.com/brittonlaroche/Oracle-Confluent-MongoDB#step-1-create-an-oracle-database)   
+[Step 2: Create a MongoDB Atlas M0 Cluster](#step-2-create-a-mongodb-atlas-m0-cluster)   
+[Step 3: Create a Confluent Cloud Cluster](#step-3-create-a-confluent-cloud-cluster)   
+[Step 4: Create a JDBC Source Connector For Oracle](#step-4-create-a-jdbc-source-connector-for-oracle)   
+[Step 5: Create a MongoDB Sink Connector](#step-5-create-a-mongodb-sink-connector)   
+[Step 6: Migrate live orders in real-time from Oracle to MongoDB Atlas](#step-6-migrate-live-orders-in-real-time-from-oracle-to-mongodb-atlas)   
+[Step 7: Validating Data & Fixing the Connectors](#step-7-validating-data--fixing-the-connectors)   
 
 ![Overview](./img/1672526944525.png) 
 
