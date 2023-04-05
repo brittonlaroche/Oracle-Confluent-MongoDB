@@ -7,7 +7,7 @@ This is a powerful hands on lab that will show you how to migrate workloads off 
 
 The following __"Hands-on Lab"__ will allow you to migrate Oracle data to MongoDB with the use of the Confluent Cloud.  Depending on your familiarity with MongoDB and The Confluent Cloud and the AWS management console, the lab can be anywhere from 60 to 90 minutes in total. Assuming you have an existing Oracle development databse accessible to the cloud you can skip the first step and use your own database. In some instructor lead lab environments a prepopulated Oracle environment may have been configured for you and save about 45 minutes.  This negates the need to install SQL Developer or any Oracle command line tools.  All other aspects of the lab use a modern cloud based toolset.    
 
-[This link has a quick article covering this lab](https://www.linkedin.com/pulse/database-modernization-made-easy-migrating-from-oracle-laroche)   
+[This link has a quick article covering this lab.](https://www.linkedin.com/pulse/database-modernization-made-easy-migrating-from-oracle-laroche)   
 
 If you don't have access to an Oracle instance, no worries we will show you how to create one in the AWS cloud. This particluar hands-on lab is specific to Oracle but the same concepts apply to any JDBC compliant database (Postgres, Sql Server, MySQL etc...). The [Confluent Hub](https://www.confluent.io/hub/) has CDC connectors for many different databases as well, covering all the major databases.  Its a simple 7 step process:
 
