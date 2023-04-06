@@ -197,8 +197,8 @@ In the connectors console we will see a list of connectors (if we have any) and 
     
 | Must Watch! Hands on Video: Creating a Fully Managed MongoDB Atlas Sink Connector in the Confluent Cloud  |
 |----------------|
-|[Click here to watch a 6 Minute Video on how to create a Confluent Cloud basic cluster in AWS](https://www.youtube.com/watch?v=_9cvz7kmeCg)|   
-|<a href="https://www.youtube.com/watch?v=_9cvz7kmeCg" target="video"><img src="./img/mongoDBSinkConnector.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
+|[Click here to watch a 6 Minute Video on creating a mongoDB sink connector](https://www.youtube.com/watch?v=_9cvz7kmeCg&list=PLjGEA1Gur_Sm_1MRUwXFngYeAQ1wV7lah&index=6)|   
+|<a href="https://www.youtube.com/watch?v=_9cvz7kmeCg&list=PLjGEA1Gur_Sm_1MRUwXFngYeAQ1wV7lah&index=6" target="video"><img src="./img/mongoDBSinkConnector.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
 
 
 # Step 6: Migrate live orders in real-time from Oracle to MongoDB Atlas
