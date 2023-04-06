@@ -345,7 +345,7 @@ ORDER_TOTAL             NUMBER
 cast(c.order_total as number(10,2) ) 
 ```
 
-Recreate the view with the SQL below in SQL Developer. 
+Recreate the view with the SQL below in SQL Developer. This will convert the datatypes to be readable.  In my opinion using number(38) for sequence key ids is wasteful on the storage and networking and should not be replicated to MongoDB.
 
 ```sql
 CREATE OR REPLACE VIEW "CUSTOMER_ORDER_PRODUCTS_BY_STORE" (
@@ -359,11 +359,11 @@ CREATE OR REPLACE VIEW "CUSTOMER_ORDER_PRODUCTS_BY_STORE" (
     "ORDER_DATETIME", 
     "ORDER_STATUS", 
     "ORDER_TOTAL") AS 
-select cast(c.order_id as number(38)), 
-    cast(c.customer_id as number(38)), 
+select cast(c.order_id as number(18,0)), 
+    cast(c.customer_id as number(18,0)), 
     c.email_address, 
     c.full_name, 
-    cast(s.store_id as number(38)), 
+    cast(s.store_id as number(18,0)), 
     s.store_name, 
     c.items, 
     c.order_datetime, 
@@ -418,4 +418,4 @@ https://docs.confluent.io/cloud/current/connectors/connect-api-section.html
 The final connector configuration files for this lab are here:   
 https://github.com/brittonlaroche/Oracle-Confluent-MongoDB/tree/main/config
 
-
+Be sure to read this: [Quick article covering this lab.](https://www.linkedin.com/pulse/database-modernization-made-easy-migrating-from-oracle-laroche) to get an idea of how to procede to replace Oracle entirely.
