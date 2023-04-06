@@ -170,8 +170,8 @@ Create a basic cluster in AWS Oregon US West 2. We don't need to work with netwo
 
 | Must Watch! Hands on Video: Creating a basic Confluent Cloud cluster |
 |----------------|
-|[Click here to watch a 4 Minute Video on how to create a Confluent Cloud basic cluster in AWS](https://youtu.be/q437AGwdYoY)|   
-|<a href="https://youtu.be/q437AGwdYoY" target="video"><img src="./img/confluentCloudIcon.PNG" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
+|[Click here to watch a 4 Minute Video on how to create a Confluent Cloud basic cluster in AWS](https://www.youtube.com/watch?v=q437AGwdYoY&list=PLjGEA1Gur_Sm_1MRUwXFngYeAQ1wV7lah&index=4)|   
+|<a href="https://www.youtube.com/watch?v=q437AGwdYoY&list=PLjGEA1Gur_Sm_1MRUwXFngYeAQ1wV7lah&index=4" target="video"><img src="./img/confluentCloudIcon.PNG" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
 
 Now that the Confluent Cloud basic cluster is created we are ready to begin configuring the Oracle source connector.
 
