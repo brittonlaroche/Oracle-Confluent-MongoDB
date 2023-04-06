@@ -375,6 +375,11 @@ from customer_order_products c,
 where c.order_id = o.order_id
 and o.store_id = s.store_id
 ```
+Note: if you want to convert number(38) to something readable like int64 in the topics you can cast like so:
+
+```sql
+cast(c.order_id as number(18,0))
+```
 
 Additionally check the "advanced configuration" in the connector settings and select "best_fit" for the numeric mapping.
 
