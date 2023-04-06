@@ -144,7 +144,7 @@ If you dont see data check each one of your tables to see if they have data.  Mo
 Now we create a new MongoDB Atlas instance.  The process begins by clicking on the folllowing url.  
 [https://cloud.mongodb.com](https://cloud.mongodb.com) or [https://mongodb.com/cloud](https://mongodb.com/cloud)
 
-![MongoDB Atlas Free](./img/mongodbCloudTryFree.PNG)
+<a href="https://www.youtube.com/watch?v=J61_hiFauNs&list=PLjGEA1Gur_Sm_1MRUwXFngYeAQ1wV7lah&index=3" target="video"><img src="./img/mongodbCloudTryFree.PNG" width="800px"><br><img src="./img/watch-now-btn-small.png"></a>
 
 Press the "Try Free" button and enter your information, or sign in with google.  Create an M0 cluster in AWS US West2 Oregon.  Set up an admin user and a demo user with read and write to any database privileges.
 
