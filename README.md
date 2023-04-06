@@ -345,7 +345,7 @@ ORDER_TOTAL             NUMBER
 cast(c.order_total as number(10,2) ) 
 ```
 
-Recreate the view with the SQL below in SQL Developer. This will convert the datatypes to be readable.  In my opinion using number(38) for sequence key ids is wasteful on the storage and networking and should not be replicated to MongoDB.
+Recreate the view with the SQL below in SQL Developer. This will convert the numeric datatypes to be readable in the Confluent Cloud topic web UI.  In my opinion using number(38) for sequence key ids is wasteful on the storage and networking and should not be replicated to MongoDB.
 
 ```sql
 CREATE OR REPLACE VIEW "CUSTOMER_ORDER_PRODUCTS_BY_STORE" (
