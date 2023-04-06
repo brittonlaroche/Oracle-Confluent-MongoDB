@@ -388,8 +388,8 @@ Additionally check the "advanced configuration" in the connector settings and se
 
 | Watch only if you need help:  Fixing Connector Issues Part 1 Oracle JDBC Source Connector |
 |----------------|
-|[Click here to watch a 10 Minute Video on troubleshooting and fixing the connectors](https://youtu.be/sT-fFEB1xig)|   
-|<a href="https://youtu.be/sT-fFEB1xig" target="video"><img src="./img/ConnectorFixes.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
+|[Click here to watch a 10 Minute Video on troubleshooting and fixing the connectors](https://www.youtube.com/watch?v=sT-fFEB1xig&list=PLjGEA1Gur_Sm_1MRUwXFngYeAQ1wV7lah&index=8)|   
+|<a href="https://www.youtube.com/watch?v=sT-fFEB1xig&list=PLjGEA1Gur_Sm_1MRUwXFngYeAQ1wV7lah&index=8" target="video"><img src="./img/ConnectorFixes.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
 
 
 
