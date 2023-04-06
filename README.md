@@ -209,8 +209,8 @@ The create new order procedure takes one argument which is the number of orders 
 
 | Must Watch! Hands on Video: Migrating Live Customer Order Data from Oracle to MongoDB Atlas with the Confluent Cloud  |
 |----------------|
-|[Click here to watch a 9 Minute Video on how to migrate live orders from Oracle to MongoDB](https://www.youtube.com/watch?v=Z3aK3IqaEWY)|   
-|<a href="https://www.youtube.com/watch?v=Z3aK3IqaEWY" target="video"><img src="./img/realTimeOrders.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
+|[Click here to watch a 9 Minute Video on how to migrate live orders from Oracle to MongoDB](https://www.youtube.com/watch?v=Z3aK3IqaEWY&list=PLjGEA1Gur_Sm_1MRUwXFngYeAQ1wV7lah&index=7)|   
+|<a href="https://www.youtube.com/watch?v=Z3aK3IqaEWY&list=PLjGEA1Gur_Sm_1MRUwXFngYeAQ1wV7lah&index=7" target="video"><img src="./img/realTimeOrders.png" width="361px"><br><img src="./img/watch-now-btn-small.png"></a>| 
 
 
 ## Create Test Orders
