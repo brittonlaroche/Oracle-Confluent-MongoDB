@@ -161,7 +161,8 @@ Congratulations you have your first cluster up and running in just a few minutes
 Click on the link below to set up your free basic cluster in the confluent cloud.   
 [https://confluent.cloud](https://confluent.cloud)
 
-![Confluent Cloud](./img/confluentCloud.PNG)
+
+<a href="https://www.youtube.com/watch?v=q437AGwdYoY&list=PLjGEA1Gur_Sm_1MRUwXFngYeAQ1wV7lah&index=4" target="video"><img src="./img/confluentCloud.PNG" width="1000px"><br></a>
 
 Create a basic cluster in AWS Oregon US West 2. We don't need to work with networking as the basic cluster is only available with public end points. Dedicated clusters allow private networking.
 
