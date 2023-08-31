@@ -75,6 +75,8 @@ Open the sql file and cut and paste the contents into SQL Developer. Be sure to 
 
 ![SQL Developer Tables](./img/SQLDeveloperTables.png)  
 
+### Load the Data
+
 |Load The data|
 |-----------------|
 |[co_install.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/co_install.sql)|
