@@ -75,17 +75,11 @@ Open the sql file and cut and paste the contents into SQL Developer. Be sure to 
 
 ![SQL Developer Tables](./img/SQLDeveloperTables.png)  
 
-|create the views|
+|Load The data|
 |-----------------|
-|[co_views.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/co_views.sql)|
+|[co_install.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/co_install.sql)|
 
-|Load data from the SQL files into the tables in this order| Notes |
-|------------------------------------|------------------------------------|
-|[customers.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/customers.sql)| |
-|[products.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/products.sql)||
-|[stores.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/stores.sql)||
-|[orders.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/orders.sql)|Click in the text block select all, copy and paste in SQL Developer|
-|[order_items.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/order_items.sql)|Click in the text block select all, copy and paste in SQL Developer|
+You may need to recompile the views!
 
 
 Oh and by the way... DO NOT FORGET TO COMMIT your work! Commit like its 1979! If you don't you may lose all your work inserting data.   
