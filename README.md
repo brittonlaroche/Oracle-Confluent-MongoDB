@@ -69,7 +69,7 @@ Follow the intsructions in his blog to install the tables via command line...  O
 
 |Create the tables|
 |-----------------|
-|[co_tables.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/co_tables.sql)|
+|[co_create.sql](https://github.com/oracle-samples/db-sample-schemas/blob/main/customer_orders/co_create.sql)|
 
 Open the sql file and cut and paste the contents into SQL Developer. Be sure to hit the arrow with a list in the top middle tool bar to execute all the statements... just copy the insert and create statements only you don't need the begin and end blocks.
 
