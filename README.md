@@ -106,7 +106,7 @@ CREATE OR REPLACE VIEW "CUSTOMER_ORDER_PRODUCTS_BY_STORE" (
     "STORE_ID", 
     "STORE_NAME", 
     "ITEMS",
-    "ORDER_DATETIME", 
+    "ORDER_TMS", 
     "ORDER_STATUS", 
     "ORDER_TOTAL") AS 
 select c.order_id, 
@@ -116,7 +116,7 @@ select c.order_id,
     s.store_id, 
     s.store_name, 
     c.items, 
-    c.order_datetime, 
+    c.order_tms, 
     c.order_status, 
     c.order_total 
 from customer_order_products c,
